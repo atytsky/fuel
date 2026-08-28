@@ -26,11 +26,19 @@ jobs:
         with:
           python-version: '3.12'
 
+      # Раннеры GitHub находятся в США, а gpnbonus.ru их не пускает (таймаут).
+      # Поэтому шаг не обязателен: если данные получить не удалось, деплоится
+      # последний закоммиченный снимок data/stations.json.
       - name: Parse stations
+        id: parse
+        continue-on-error: true
         run: python3 parser.py --delay 0.5
 
       - name: Show summary
         run: |
+          if [ "${{ steps.parse.outcome }}" != "success" ]; then
+            echo "> Свежие данные получить не удалось (gpnbonus.ru недоступен с раннера GitHub). Опубликован последний закоммиченный снимок." >> $GITHUB_STEP_SUMMARY
+          fi
           python3 - <<'PY' >> $GITHUB_STEP_SUMMARY
           import json, collections
           d = json.load(open('data/stations.json'))

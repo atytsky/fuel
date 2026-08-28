@@ -123,7 +123,8 @@ async function init(){
   }
   const dt=new Date(DATA.generatedAt);
   document.getElementById('title').textContent=`${DATA.fuel.shortTitle} на АЗС Газпромнефть`;
-  document.getElementById('meta').textContent=`${DATA.fuel.title}. Обновлено: ${dt.toLocaleString('ru-RU')} · АЗС в регионе: ${DATA.total}${DATA.errors?` · ошибок парсинга: ${DATA.errors}`:''}`;
+  const ageH=(Date.now()-dt.getTime())/36e5;
+  document.getElementById('meta').textContent=`${DATA.fuel.title}. Данные собраны: ${dt.toLocaleString('ru-RU')}${ageH>3?' (устарели на '+Math.round(ageH)+' ч)':''} · АЗС в регионе: ${DATA.total}${DATA.errors?` · ошибок парсинга: ${DATA.errors}`:''}`;
 
   const cities=[...new Set(DATA.stations.map(s=>s.city))].sort((a,b)=>a.localeCompare(b,'ru'));
   const sel=document.getElementById('city');
