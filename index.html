@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G-95 · АЗС Газпромнефть</title>
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--text:#1d2330;--muted:#6b7280;--border:#e5e7eb;
+        --ok:#1a9a5b;--ok-bg:#e6f6ee;--no:#d13b3b;--no-bg:#fbe9e9;--way:#c77d0a;--way-bg:#fff3df;--na:#8a93a3;--na-bg:#eef0f3;}
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+  header{background:var(--card);border-bottom:1px solid var(--border);padding:14px 20px;position:sticky;top:0;z-index:2}
+  .wrap{max-width:1200px;margin:0 auto}
+  h1{margin:0 0 4px;font-size:20px}
+  .meta{color:var(--muted);font-size:13px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;align-items:center}
+  select,input{padding:7px 10px;border:1px solid var(--border);border-radius:8px;font:inherit;background:#fff}
+  input{min-width:240px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{border:1px solid var(--border);background:#fff;border-radius:999px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px}
+  .chip.on{border-color:transparent;color:#fff}
+  .chip[data-s="available"].on{background:var(--ok)}
+  .chip[data-s="absent"].on{background:var(--no)}
+  .chip[data-s="in_transit"].on{background:var(--way)}
+  .chip[data-s="not_sold"].on,.chip[data-s="unknown"].on{background:var(--na)}
+  .summary{display:flex;gap:16px;flex-wrap:wrap;margin:16px 20px 0;color:var(--muted);font-size:13px}
+  .summary b{color:var(--text)}
+  main{padding:16px 20px 40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;border-left:5px solid var(--na)}
+  .card.available{border-left-color:var(--ok)} .card.absent{border-left-color:var(--no)} .card.in_transit{border-left-color:var(--way)}
+  .card h3{margin:0;font-size:15px}
+  .addr{color:var(--muted)}
+  .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .status{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:8px;font-weight:600;font-size:13px}
+  .status.available{background:var(--ok-bg);color:var(--ok)} .status.absent{background:var(--no-bg);color:var(--no)}
+  .status.in_transit{background:var(--way-bg);color:var(--way)} .status.not_sold,.status.unknown{background:var(--na-bg);color:var(--na)}
+  .price{font-size:18px;font-weight:700}
+  .since{color:var(--muted);font-size:12px}
+  .fuels{display:grid;grid-template-columns:auto auto 1fr auto;gap:4px 10px;margin-top:6px;align-items:center;font-size:13px}
+  .frow{display:contents} .frow.main span{font-weight:600}
+  .fuels .available{color:var(--ok)} .fuels .absent{color:var(--no)} .fuels .in_transit{color:var(--way)} .fuels .unknown{color:var(--na)}
+  .tag{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--na-bg);color:var(--muted)}
+  .tag.available{background:var(--ok-bg);color:var(--ok)} .tag.absent{background:var(--no-bg);color:var(--no)} .tag.in_transit{background:var(--way-bg);color:var(--way)}
+  .links a{color:#2563eb;text-decoration:none;font-size:13px;margin-right:12px}
+  .empty{color:var(--muted);padding:40px;text-align:center}
+  details summary{cursor:pointer;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1 id="title">G-95 на АЗС Газпромнефть</h1>
+  <div class="meta" id="meta">Загрузка data/stations.json…</div>
+  <div class="controls">
+    <select id="city"></select>
+    <input id="q" type="search" placeholder="Поиск по адресу / номеру АЗС">
+    <div class="chips" id="chips">
+      <button class="chip on" data-s="absent">Отсутствует</button>
+      <button class="chip on" data-s="in_transit">🚚 В пути</button>
+      <button class="chip" data-s="available">В наличии</button>
+      <button class="chip" data-s="not_sold">Не продаётся</button>
+      <button class="chip" data-s="unknown">Нет данных</button>
+    </div>
+  </div>
+</div></header>
+<div class="wrap"><div class="summary" id="summary"></div></div>
+<main class="wrap"><div class="grid" id="grid"></div><div class="empty" id="empty" hidden>Ничего не найдено</div></main>
+
+<script>
+const LABEL={available:'В наличии',absent:'Отсутствует',in_transit:'В пути',not_sold:'Не продаётся',unknown:'Нет данных'};
+const state={city:'Екатеринбург',q:'',statuses:new Set(['absent','in_transit'])};
+let DATA=null;
+
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function statusText(f){
+  if(f.status==='in_transit') return '🚚 В пути'+(f.delivery==='soon'?' (~2ч)':'');
+  return LABEL[f.status]||f.status;
+}
+
+function render(){
+  const list=DATA.stations.filter(s=>
+    (state.city==='__all'||s.city===state.city)&&
+    state.statuses.has(s.fuel.status)&&
+    (!state.q||(s.address+' '+s.number+' '+s.name).toLowerCase().includes(state.q)));
+  const grid=document.getElementById('grid');
+  grid.innerHTML=list.map(s=>{
+    const f=s.fuel;
+    const fuels=[...s.allFuels].sort((a,b)=>(a.id===f.id?-1:b.id===f.id?1:0)).map(o=>
+      `<div class="frow ${o.id===f.id?'main':''}"><span class="tag ${o.status}">${esc(o.shortTitle)}</span>`+
+      `<span>${o.price?o.price+' ₽':'—'}</span><span class="${o.status}">${o.status==='in_transit'?'🚚 ':''}${esc(LABEL[o.status])}</span>`+
+      `<span class="since">${o.since?'на '+esc(o.since)+' МСК':''}</span></div>`).join('');
+    const priceDt=f.priceSince?new Date(f.priceSince):null;
+    return `<div class="card ${f.status}">
+      <div class="row"><h3>${esc(s.name||('АЗС №'+s.number))}</h3><span class="status ${f.status}">${statusText(f)}</span></div>
+      <div class="addr">${esc(s.city)}, ${esc(s.address)}</div>
+      <div class="row">
+        <div>${f.price?`<span class="price">${f.price} ₽</span> <span class="since">${esc(f.shortTitle)}</span>`:`<span class="since">${esc(f.shortTitle)}: цена не указана</span>`}</div>
+        <div class="since">${f.since?'данные на '+esc(f.since)+' МСК':''}</div>
+      </div>
+      <div class="since">${esc(s.workMode||'')}${s.open===false?' · закрыта':''}</div>
+      ${fuels?`<details><summary>Всё топливо (${s.allFuels.length})</summary><div class="fuels">${fuels}</div></details>`:''}
+      ${priceDt?`<div class="since">Цены актуальны на ${priceDt.toLocaleString('ru-RU',{timeZone:'Europe/Moscow',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})} МСК</div>`:''}
+      <div class="links">
+        ${s.lat?`<a target="_blank" rel="noopener" href="https://yandex.ru/maps/?pt=${s.lon},${s.lat}&z=16&l=map">Яндекс Карты</a>`:''}
+      </div>
+    </div>`;}).join('');
+  document.getElementById('empty').hidden=list.length>0;
+
+  const pool=DATA.stations.filter(s=>state.city==='__all'||s.city===state.city);
+  const cnt={};pool.forEach(s=>cnt[s.fuel.status]=(cnt[s.fuel.status]||0)+1);
+  document.getElementById('summary').innerHTML=
+    `<span>Показано <b>${list.length}</b> из <b>${pool.length}</b></span>`+
+    Object.keys(LABEL).map(k=>`<span>${LABEL[k]}: <b>${cnt[k]||0}</b></span>`).join('');
+}
+
+async function init(){
+  try{
+    DATA=await (await fetch('data/stations.json',{cache:'no-store'})).json();
+  }catch(e){
+    document.getElementById('meta').textContent='Не удалось загрузить data/stations.json — запустите parser.py и откройте страницу через локальный сервер (serve.sh).';
+    return;
+  }
+  const dt=new Date(DATA.generatedAt);
+  document.getElementById('title').textContent=`${DATA.fuel.shortTitle} на АЗС Газпромнефть`;
+  document.getElementById('meta').textContent=`${DATA.fuel.title}. Обновлено: ${dt.toLocaleString('ru-RU')} · АЗС в регионе: ${DATA.total}${DATA.errors?` · ошибок парсинга: ${DATA.errors}`:''}`;
+
+  const cities=[...new Set(DATA.stations.map(s=>s.city))].sort((a,b)=>a.localeCompare(b,'ru'));
+  const sel=document.getElementById('city');
+  sel.innerHTML=`<option value="__all">Вся область (${DATA.stations.length})</option>`+
+    cities.map(c=>`<option value="${esc(c)}">${esc(c)} (${DATA.stations.filter(s=>s.city===c).length})</option>`).join('');
+  sel.value=cities.includes(state.city)?state.city:'__all';state.city=sel.value;
+  sel.onchange=()=>{state.city=sel.value;render();};
+  document.getElementById('q').oninput=e=>{state.q=e.target.value.trim().toLowerCase();render();};
+  document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{
+    const s=b.dataset.s;b.classList.toggle('on');
+    b.classList.contains('on')?state.statuses.add(s):state.statuses.delete(s);render();});
+  render();
+}
+init();
+</script>
+</body>
+</html>
