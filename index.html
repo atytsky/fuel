@@ -44,6 +44,9 @@
   .tag.available{background:var(--ok-bg);color:var(--ok)} .tag.absent{background:var(--no-bg);color:var(--no)} .tag.in_transit{background:var(--way-bg);color:var(--way)}
   .links a{color:#2563eb;text-decoration:none;font-size:13px;margin-right:12px}
   .empty{color:var(--muted);padding:40px;text-align:center}
+  #changes{margin:10px 20px 0;font-size:13px}
+  #changes ul{margin:6px 0 0;padding-left:18px;color:var(--muted)}
+  #changes b{color:var(--text)}
   details summary{cursor:pointer;color:var(--muted);font-size:12px}
 </style>
 </head>
@@ -63,7 +66,7 @@
     </div>
   </div>
 </div></header>
-<div class="wrap"><div class="summary" id="summary"></div></div>
+<div class="wrap"><div class="summary" id="summary"></div><div id="changes"></div></div>
 <main class="wrap"><div class="grid" id="grid"></div><div class="empty" id="empty" hidden>Ничего не найдено</div></main>
 
 <script>
@@ -136,6 +139,13 @@ async function init(){
   document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{
     const s=b.dataset.s;b.classList.toggle('on');
     b.classList.contains('on')?state.statuses.add(s):state.statuses.delete(s);render();});
+  const ch=(DATA.changes||[]).filter(c=>state.city==='__all'||c.city===state.city);
+  if(ch.length){
+    document.getElementById('changes').innerHTML=
+      `<details open><summary>Изменилось с прошлого прогона: <b>${ch.length}</b></summary><ul>`+
+      ch.map(c=>`<li>${esc(c.city)}, ${esc(c.address)} (№${esc(c.number)}): ${esc(LABEL[c.from]||c.from)} → <b>${esc(LABEL[c.to]||c.to)}</b></li>`).join('')+
+      `</ul></details>`;
+  }
   render();
 }
 init();

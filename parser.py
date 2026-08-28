@@ -147,6 +147,26 @@ def main():
         })
         time.sleep(args.delay)
 
+    # сравнение с предыдущим снимком: что изменилось по целевому топливу
+    changes = []
+    prev_path = Path(args.out)
+    if prev_path.exists():
+        try:
+            prev = json.loads(prev_path.read_text(encoding="utf-8"))
+            prev_by_id = {s["id"]: s for s in prev.get("stations", [])}
+            for r in result:
+                old = prev_by_id.get(r["id"])
+                if not old:
+                    continue
+                o_st, n_st = old["fuel"]["status"], r["fuel"]["status"]
+                if o_st != n_st:
+                    changes.append({
+                        "id": r["id"], "number": r["number"], "city": r["city"],
+                        "address": r["address"], "from": o_st, "to": n_st,
+                    })
+        except Exception as e:  # noqa: BLE001
+            print(f"не удалось сравнить с предыдущим снимком: {e}", file=sys.stderr)
+
     out = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "regionId": args.region,
@@ -154,6 +174,9 @@ def main():
         "fuel": {"id": args.fuel, "shortTitle": fuel.get("shortTitle"), "title": fuel.get("title")},
         "total": len(result),
         "errors": errors,
+        "changes": changes,
+        "previousAt": (json.loads(Path(args.out).read_text(encoding="utf-8")).get("generatedAt")
+                       if Path(args.out).exists() else None),
         "stations": result,
     }
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
@@ -162,6 +185,12 @@ def main():
     from collections import Counter
     c = Counter(r["fuel"]["status"] for r in result)
     print(f"\nГотово: {args.out}\nСтатусы {fuel.get('shortTitle')}: {dict(c)}; ошибок: {errors}", file=sys.stderr)
+    if changes:
+        print(f"Изменения с прошлого прогона ({len(changes)}):", file=sys.stderr)
+        for ch in changes:
+            print(f"  {ch['city']}, {ch['address']} (№{ch['number']}): {ch['from']} -> {ch['to']}", file=sys.stderr)
+    elif out["previousAt"]:
+        print("Изменений с прошлого прогона нет.", file=sys.stderr)
 
 
 if __name__ == "__main__":
