@@ -77,7 +77,7 @@ let DATA=null;
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 function statusText(f){
-  if(f.status==='in_transit') return '🚚 В пути'+(f.delivery==='soon'?' (~2ч)':'');
+  if(f.status==='in_transit') return '🚚 В пути'+(f.delivery==='soon'?' (еще ~2ч)':'');
   return LABEL[f.status]||f.status;
 }
 
@@ -91,7 +91,7 @@ function render(){
     const f=s.fuel;
     const fuels=[...s.allFuels].sort((a,b)=>(a.id===f.id?-1:b.id===f.id?1:0)).map(o=>
       `<div class="frow ${o.id===f.id?'main':''}"><span class="tag ${o.status}">${esc(o.shortTitle)}</span>`+
-      `<span>${o.price?o.price+' ₽':'—'}</span><span class="${o.status}">${o.status==='in_transit'?'🚚 ':''}${esc(LABEL[o.status])}</span>`+
+      `<span>${o.price?o.price+' ₽':'—'}</span><span class="${o.status}">${o.status==='in_transit'?'🚚 ':''}${esc(LABEL[o.status])}${o.status==='in_transit'&&o.delivery==='soon'?' (еще ~2ч)':''}</span>`+
       `<span class="since">${o.since?'на '+esc(o.since)+' МСК':''}</span></div>`).join('');
     const priceDt=f.priceSince?new Date(f.priceSince):null;
     return `<div class="card ${f.status}">
@@ -143,7 +143,7 @@ async function init(){
   if(ch.length){
     document.getElementById('changes').innerHTML=
       `<details open><summary>Изменилось с прошлого прогона: <b>${ch.length}</b></summary><ul>`+
-      ch.map(c=>`<li>${esc(c.city)}, ${esc(c.address)} (№${esc(c.number)}): ${esc(LABEL[c.from]||c.from)} → <b>${esc(LABEL[c.to]||c.to)}</b></li>`).join('')+
+      ch.map(c=>`<li>${esc(c.city)}, ${esc(c.address)} (№${esc(c.number)}): ${esc(LABEL[c.from]||c.from)} → <b>${esc(LABEL[c.to]||c.to)}${c.to==='in_transit'&&c.delivery==='soon'?' (еще ~2ч)':''}</b></li>`).join('')+
       `</ul></details>`;
   }
   render();

@@ -52,6 +52,9 @@ def post_json(url, payload, retries=3, timeout=20):
         except (urllib.error.URLError, TimeoutError) as e:
             last_err = e
             time.sleep(2 * attempt)
+        except json.JSONDecodeError as e:
+            last_err = e
+            time.sleep(2 * attempt)
     raise RuntimeError(f"Не удалось запросить {url}: {last_err}")
 
 
@@ -163,6 +166,7 @@ def main():
                     changes.append({
                         "id": r["id"], "number": r["number"], "city": r["city"],
                         "address": r["address"], "from": o_st, "to": n_st,
+                        "delivery": r["fuel"]["delivery"],
                     })
         except Exception as e:  # noqa: BLE001
             print(f"не удалось сравнить с предыдущим снимком: {e}", file=sys.stderr)
