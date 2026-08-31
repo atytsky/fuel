@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Парсер карты АЗС Газпромнефть (gpnbonus.ru/fuel/refuel-map).
+Parser for the Gazpromneft station map (gpnbonus.ru/fuel/refuel-map).
 
-Собирает по всем АЗС Свердловской области (по умолчанию) статус топлива G-95:
-в наличии / отсутствует / в пути. Результат -> data/stations.json, который
-читает SPA (index.html).
+Collects the G-95 status — in stock / out of stock / in transit — for every
+station in the Sverdlovsk region (by default). The result goes to
+data/stations.json, which the SPA (index.html) reads.
 
-Только стандартная библиотека. Запросы идут аккуратно: с паузой, ретраями
-и одним потоком, чтобы не нагружать сайт.
+Standard library only. Requests are deliberately gentle on the source:
+single-threaded, paused between calls, retried on transient failures.
 """
 import argparse
 import json
@@ -55,16 +55,16 @@ def post_json(url, payload, retries=3, timeout=20):
         except json.JSONDecodeError as e:
             last_err = e
             time.sleep(2 * attempt)
-    raise RuntimeError(f"Не удалось запросить {url}: {last_err}")
+    raise RuntimeError(f"Request to {url} failed: {last_err}")
 
 
 def rest_status(rest):
-    """Приводим блок rest к одному из: available / absent / in_transit / unknown."""
+    """Reduce a `rest` block to one of: available / absent / in_transit / unknown."""
     if not rest or not rest.get("since"):
         return "unknown"
     if rest.get("avail"):
         return "available"
-    # логика с сайта: not avail && delivery !== 'no' -> показывается грузовик «В пути»
+    # same logic as the site: not avail && delivery !== 'no' -> the truck "in transit" badge
     if rest.get("delivery") not in (None, "no"):
         return "in_transit"
     return "absent"
@@ -72,14 +72,14 @@ def rest_status(rest):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--region", type=int, default=SVERDLOVSK_REGION_ID, help="region_id (по умолчанию Свердловская область)")
-    ap.add_argument("--city", default=None, help="фильтр по городу (например 'Екатеринбург'); по умолчанию весь регион")
-    ap.add_argument("--fuel", type=int, default=G95_ID, help="id топлива (421 = G-95)")
-    ap.add_argument("--delay", type=float, default=0.5, help="пауза между запросами, сек")
+    ap.add_argument("--region", type=int, default=SVERDLOVSK_REGION_ID, help="region_id (defaults to Sverdlovsk region)")
+    ap.add_argument("--city", default=None, help="filter by city (e.g. 'Екатеринбург'); the whole region by default")
+    ap.add_argument("--fuel", type=int, default=G95_ID, help="fuel id (421 = G-95)")
+    ap.add_argument("--delay", type=float, default=0.5, help="pause between requests, seconds")
     ap.add_argument("--out", default=str(Path(__file__).parent / "data" / "stations.json"))
     args = ap.parse_args()
 
-    print("Загружаю список АЗС...", file=sys.stderr)
+    print("Loading station list...", file=sys.stderr)
     data = post_json(LIST_URL, {})
     products = {p["id"]: p for p in data["oilProducts"]}
     fuel = products.get(args.fuel, {"shortTitle": str(args.fuel), "title": ""})
@@ -88,7 +88,7 @@ def main():
     if args.city:
         stations = [s for s in stations if (s.get("city") or "").lower() == args.city.lower()]
     stations.sort(key=lambda s: ((s.get("city") or ""), (s.get("address") or "")))
-    print(f"АЗС в выборке: {len(stations)}", file=sys.stderr)
+    print(f"Stations selected: {len(stations)}", file=sys.stderr)
 
     result = []
     errors = 0
@@ -102,13 +102,13 @@ def main():
         except Exception as e:  # noqa: BLE001
             errors += 1
             err = str(e)
-            print(f"    ошибка: {e}", file=sys.stderr)
+            print(f"    error: {e}", file=sys.stderr)
 
         target = next((o for o in oils if o.get("id") == args.fuel), None)
         rest = (target or {}).get("rest") or {}
         price = ((target or {}).get("price") or {}).get("price")
 
-        # список "oils" в /list бывает и словарём, и пустым списком
+        # in /list the "oils" field is sometimes a dict, sometimes an empty list
         list_oils = s.get("oils") if isinstance(s.get("oils"), dict) else {}
 
         result.append({
@@ -122,7 +122,7 @@ def main():
             "lon": float(s["longitude"]) if s.get("longitude") else None,
             "workMode": s.get("workMode"),
             "open": s.get("open"),
-            "sellsFuel": str(args.fuel) in list_oils,  # есть ли топливо в ассортименте АЗС по данным списка
+            "sellsFuel": str(args.fuel) in list_oils,  # whether the list endpoint claims the station carries it
             "fuel": {
                 "id": args.fuel,
                 "shortTitle": fuel.get("shortTitle"),
@@ -150,7 +150,7 @@ def main():
         })
         time.sleep(args.delay)
 
-    # сравнение с предыдущим снимком: что изменилось по целевому топливу
+    # diff against the previous snapshot: what changed for the tracked fuel
     changes = []
     prev_path = Path(args.out)
     if prev_path.exists():
@@ -169,7 +169,7 @@ def main():
                         "delivery": r["fuel"]["delivery"],
                     })
         except Exception as e:  # noqa: BLE001
-            print(f"не удалось сравнить с предыдущим снимком: {e}", file=sys.stderr)
+            print(f"could not diff against the previous snapshot: {e}", file=sys.stderr)
 
     out = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -188,13 +188,13 @@ def main():
 
     from collections import Counter
     c = Counter(r["fuel"]["status"] for r in result)
-    print(f"\nГотово: {args.out}\nСтатусы {fuel.get('shortTitle')}: {dict(c)}; ошибок: {errors}", file=sys.stderr)
+    print(f"\nDone: {args.out}\n{fuel.get('shortTitle')} statuses: {dict(c)}; errors: {errors}", file=sys.stderr)
     if changes:
-        print(f"Изменения с прошлого прогона ({len(changes)}):", file=sys.stderr)
+        print(f"Changes since the previous run ({len(changes)}):", file=sys.stderr)
         for ch in changes:
             print(f"  {ch['city']}, {ch['address']} (№{ch['number']}): {ch['from']} -> {ch['to']}", file=sys.stderr)
     elif out["previousAt"]:
-        print("Изменений с прошлого прогона нет.", file=sys.stderr)
+        print("No changes since the previous run.", file=sys.stderr)
 
 
 if __name__ == "__main__":

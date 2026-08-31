@@ -1,12 +1,12 @@
 #!/bin/zsh
-# Ставит (или обновляет) расписание обновления данных: каждые 30 минут.
-# Снять: launchctl bootout gui/$(id -u)/dev.andy.fuel-update
-#        rm ~/Library/LaunchAgents/dev.andy.fuel-update.plist
+# Installs (or refreshes) the data-update schedule: every 30 minutes.
+# Remove with: launchctl bootout gui/$(id -u)/dev.andy.fuel-update
+#              rm ~/Library/LaunchAgents/dev.andy.fuel-update.plist
 set -eu
 DIR="$(cd "$(dirname "$0")" && pwd)"
 LABEL=dev.andy.fuel-update
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
-INTERVAL=${1:-1800}   # секунды, по умолчанию 30 минут
+INTERVAL=${1:-1800}   # seconds, 30 minutes by default
 
 mkdir -p "$DIR/logs" "$HOME/Library/LaunchAgents"
 cat > "$PLIST" <<PL
@@ -32,5 +32,5 @@ PL
 
 launchctl bootout "gui/$(id -u)/$LABEL" 2>/dev/null || true
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
-echo "Расписание установлено: каждые $INTERVAL с. Логи: $DIR/logs/update.log"
+echo "Schedule installed: every $INTERVAL s. Log: $DIR/logs/update.log"
 launchctl print "gui/$(id -u)/$LABEL" | grep -E '^\s+(state|program|runs) ' || true

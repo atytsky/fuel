@@ -126,7 +126,7 @@ function renderChanges(){
 }
 
 async function load(){
-  // ?v= обходит кэш CDN GitHub Pages, иначе можно получить старый снимок
+  // ?v= busts the GitHub Pages CDN cache, otherwise a stale snapshot can come back
   return (await fetch('data/stations.json?v='+Date.now(),{cache:'no-store'})).json();
 }
 
@@ -160,13 +160,13 @@ async function init(){
   renderChanges();
   render();
 
-  // данные обновляются локально раз в 30 минут — подхватываем новый снимок сами
+  // the data is refreshed locally every 30 minutes — pick up new snapshots on our own
   setInterval(async()=>{
     try{
       const fresh=await load();
       if(fresh.generatedAt!==DATA.generatedAt){DATA=fresh;renderChanges();}
       DATA=fresh;setMeta();render();
-    }catch(e){/* сеть отвалилась — покажем то, что есть */}
+    }catch(e){/* network dropped — keep showing what we have */}
   },5*60*1000);
   setInterval(setMeta,60*1000);
 }
