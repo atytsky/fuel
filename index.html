@@ -119,7 +119,8 @@ function render(){
 
 async function init(){
   try{
-    DATA=await (await fetch('data/stations.json',{cache:'no-store'})).json();
+    // ?v= обходит кэш CDN GitHub Pages, иначе можно получить старый снимок
+    DATA=await (await fetch('data/stations.json?v='+Date.now(),{cache:'no-store'})).json();
   }catch(e){
     document.getElementById('meta').textContent='Не удалось загрузить data/stations.json — запустите parser.py и откройте страницу через локальный сервер (serve.sh).';
     return;
