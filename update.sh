@@ -8,9 +8,16 @@ PATH=/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin
 STAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
 # парсер пишет прогресс в stderr, поэтому лог общий, а не только для ошибок
+# источник иногда троттлит запросы — тогда пробуем ещё раз через 3 минуты,
+# чтобы не ждать полный цикл расписания
 if ! python3 parser.py --delay 0.8 >/dev/null 2>>logs/parser.log; then
-  echo "$STAMP  парсер не смог получить данные (см. logs/parser.log)"
-  exit 0   # не ошибка: источник троттлит, попробуем в следующий раз
+  echo "$STAMP  источник не ответил, повтор через 3 мин"
+  sleep 180
+  if ! python3 parser.py --delay 1.2 >/dev/null 2>>logs/parser.log; then
+    echo "$(date '+%Y-%m-%d %H:%M:%S')  повтор тоже не удался (см. logs/parser.log)"
+    exit 0   # не ошибка: попробуем в следующий цикл расписания
+  fi
+  echo "$(date '+%Y-%m-%d %H:%M:%S')  повтор удался"
 fi
 
 if git diff --quiet -- data/stations.json; then
