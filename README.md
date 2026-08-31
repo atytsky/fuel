@@ -9,6 +9,18 @@ Live page: **https://atytsky.github.io/fuel/**
 
 Python 3 only, no dependencies.
 
+## Files
+
+| file | role |
+| --- | --- |
+| `parser.py` | queries the API and writes `data/stations.json` |
+| `index.html` | the page: filters by city, status and address, no build step |
+| `update.sh` | one scheduled cycle: parse, commit, push |
+| `install-schedule.sh` | installs the launchd job that runs `update.sh` |
+| `serve.sh` | parse and open the page on `localhost:8765` |
+
+The page's interface is in Russian, matching the source data (city names, addresses, MSK timestamps).
+
 ## Usage
 
 ```sh
