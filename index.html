@@ -117,37 +117,58 @@ function render(){
     Object.keys(LABEL).map(k=>`<span>${LABEL[k]}: <b>${cnt[k]||0}</b></span>`).join('');
 }
 
+function renderChanges(){
+  const ch=(DATA.changes||[]).filter(c=>state.city==='__all'||c.city===state.city);
+  document.getElementById('changes').innerHTML=ch.length?
+    `<details open><summary>Изменилось с прошлого прогона: <b>${ch.length}</b></summary><ul>`+
+    ch.map(c=>`<li>${esc(c.city)}, ${esc(c.address)} (№${esc(c.number)}): ${esc(LABEL[c.from]||c.from)} → <b>${esc(LABEL[c.to]||c.to)}${c.to==='in_transit'&&c.delivery==='soon'?' (еще ~2ч)':''}</b></li>`).join('')+
+    `</ul></details>`:'';
+}
+
+async function load(){
+  // ?v= обходит кэш CDN GitHub Pages, иначе можно получить старый снимок
+  return (await fetch('data/stations.json?v='+Date.now(),{cache:'no-store'})).json();
+}
+
+function setMeta(){
+  const dt=new Date(DATA.generatedAt);
+  const ageMin=Math.round((Date.now()-dt.getTime())/6e4);
+  const age=ageMin<60?`${ageMin} мин назад`:`${Math.round(ageMin/60)} ч назад`;
+  document.getElementById('meta').textContent=`${DATA.fuel.title}. Данные собраны: ${dt.toLocaleString('ru-RU')} (${age}) · АЗС в регионе: ${DATA.total}${DATA.errors?` · ошибок парсинга: ${DATA.errors}`:''}`;
+}
+
 async function init(){
   try{
-    // ?v= обходит кэш CDN GitHub Pages, иначе можно получить старый снимок
-    DATA=await (await fetch('data/stations.json?v='+Date.now(),{cache:'no-store'})).json();
+    DATA=await load();
   }catch(e){
     document.getElementById('meta').textContent='Не удалось загрузить data/stations.json — запустите parser.py и откройте страницу через локальный сервер (serve.sh).';
     return;
   }
-  const dt=new Date(DATA.generatedAt);
   document.getElementById('title').textContent=`${DATA.fuel.shortTitle} на АЗС Газпромнефть`;
-  const ageH=(Date.now()-dt.getTime())/36e5;
-  document.getElementById('meta').textContent=`${DATA.fuel.title}. Данные собраны: ${dt.toLocaleString('ru-RU')}${ageH>3?' (устарели на '+Math.round(ageH)+' ч)':''} · АЗС в регионе: ${DATA.total}${DATA.errors?` · ошибок парсинга: ${DATA.errors}`:''}`;
+  setMeta();
 
   const cities=[...new Set(DATA.stations.map(s=>s.city))].sort((a,b)=>a.localeCompare(b,'ru'));
   const sel=document.getElementById('city');
   sel.innerHTML=`<option value="__all">Вся область (${DATA.stations.length})</option>`+
     cities.map(c=>`<option value="${esc(c)}">${esc(c)} (${DATA.stations.filter(s=>s.city===c).length})</option>`).join('');
   sel.value=cities.includes(state.city)?state.city:'__all';state.city=sel.value;
-  sel.onchange=()=>{state.city=sel.value;render();};
+  sel.onchange=()=>{state.city=sel.value;renderChanges();render();};
   document.getElementById('q').oninput=e=>{state.q=e.target.value.trim().toLowerCase();render();};
   document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{
     const s=b.dataset.s;b.classList.toggle('on');
     b.classList.contains('on')?state.statuses.add(s):state.statuses.delete(s);render();});
-  const ch=(DATA.changes||[]).filter(c=>state.city==='__all'||c.city===state.city);
-  if(ch.length){
-    document.getElementById('changes').innerHTML=
-      `<details open><summary>Изменилось с прошлого прогона: <b>${ch.length}</b></summary><ul>`+
-      ch.map(c=>`<li>${esc(c.city)}, ${esc(c.address)} (№${esc(c.number)}): ${esc(LABEL[c.from]||c.from)} → <b>${esc(LABEL[c.to]||c.to)}${c.to==='in_transit'&&c.delivery==='soon'?' (еще ~2ч)':''}</b></li>`).join('')+
-      `</ul></details>`;
-  }
+  renderChanges();
   render();
+
+  // данные обновляются локально раз в 30 минут — подхватываем новый снимок сами
+  setInterval(async()=>{
+    try{
+      const fresh=await load();
+      if(fresh.generatedAt!==DATA.generatedAt){DATA=fresh;renderChanges();}
+      DATA=fresh;setMeta();render();
+    }catch(e){/* сеть отвалилась — покажем то, что есть */}
+  },5*60*1000);
+  setInterval(setMeta,60*1000);
 }
 init();
 </script>
