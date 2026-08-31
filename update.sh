@@ -7,8 +7,9 @@ cd "$(dirname "$0")" || exit 1
 PATH=/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin
 STAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
-if ! python3 parser.py --delay 0.8 >/dev/null 2>>logs/parser-errors.log; then
-  echo "$STAMP  парсер не смог получить данные (см. logs/parser-errors.log)"
+# парсер пишет прогресс в stderr, поэтому лог общий, а не только для ошибок
+if ! python3 parser.py --delay 0.8 >/dev/null 2>>logs/parser.log; then
+  echo "$STAMP  парсер не смог получить данные (см. logs/parser.log)"
   exit 0   # не ошибка: источник троттлит, попробуем в следующий раз
 fi
 
