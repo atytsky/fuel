@@ -21,6 +21,13 @@ fi
 CHANGES=$(python3 -c "import json;print(len(json.load(open('data/stations.json'))['changes']))")
 git add data/stations.json
 git commit -q -m "data: снимок $STAMP (изменений: $CHANGES)"
+
+# remote может отсутствовать (публикация не настроена) — тогда просто пишем локально
+if ! git remote get-url origin >/dev/null 2>&1; then
+  echo "$STAMP  данные обновлены локально, изменений статусов: $CHANGES"
+  exit 0
+fi
+
 if git push -q origin main 2>>logs/push-errors.log; then
   echo "$STAMP  опубликовано, изменений статусов: $CHANGES"
 else
