@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T06:08:27+00:00",
+  "generatedAt": "2026-09-08T06:41:56+00:00",
   "regionId": 2612765,
   "city": null,
   "fuel": {
@@ -11,34 +11,70 @@
   "errors": 0,
   "changes": [
     {
-      "id": 2561,
-      "number": "1",
-      "city": "Екатеринбург",
-      "address": "Посадская, 8",
-      "from": "unknown",
+      "id": 340,
+      "number": "49",
+      "city": "Белоярский",
+      "address": "Химиков, 17",
+      "from": "in_transit",
       "to": "absent",
       "delivery": "no"
     },
     {
-      "id": 2311,
-      "number": "80",
-      "city": "Забельный",
-      "address": " Екатеринбург-Серов( 89-й км)",
+      "id": 316,
+      "number": "15",
+      "city": "Дегтярск",
+      "address": "Новый лесозавод, 9",
       "from": "in_transit",
       "to": "available",
-      "delivery": "soon"
+      "delivery": "yes"
     },
     {
-      "id": 374,
-      "number": "96",
-      "city": "Краснотурьинск",
-      "address": "Фрунзе, 78",
+      "id": 2318,
+      "number": "33",
+      "city": "Екатеринбург",
+      "address": "8 Марта, 271",
       "from": "available",
       "to": "absent",
       "delivery": "no"
+    },
+    {
+      "id": 2239,
+      "number": "130",
+      "city": "Екатеринбург",
+      "address": "Восточная, 7В",
+      "from": "available",
+      "to": "absent",
+      "delivery": "no"
+    },
+    {
+      "id": 2316,
+      "number": "114",
+      "city": "Екатеринбург",
+      "address": "Кольцовский, 51",
+      "from": "in_transit",
+      "to": "available",
+      "delivery": "yes"
+    },
+    {
+      "id": 356,
+      "number": "73",
+      "city": "Екатеринбург",
+      "address": "Серовский тракт (15 км, справа)",
+      "from": "available",
+      "to": "in_transit",
+      "delivery": "yes"
+    },
+    {
+      "id": 2250,
+      "number": "41",
+      "city": "Екатеринбург",
+      "address": "Фронтовых Бригад, 14А",
+      "from": "absent",
+      "to": "in_transit",
+      "delivery": "yes"
     }
   ],
-  "previousAt": "2026-09-08T05:34:51+00:00",
+  "previousAt": "2026-09-08T06:08:27+00:00",
   "stations": [
     {
       "id": 2565,
@@ -60,7 +96,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:58",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -70,7 +106,7 @@
           "price": 67.39,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -79,7 +115,7 @@
           "price": 63.3,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -88,7 +124,7 @@
           "price": 79.4,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -97,7 +133,7 @@
           "price": 69.39,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -133,7 +169,7 @@
           "price": 65.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -142,7 +178,7 @@
           "price": 69.66,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -151,7 +187,7 @@
           "price": 80.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -177,7 +213,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "yes"
       },
       "allFuels": [
@@ -187,7 +223,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:00:09.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -196,7 +232,7 @@
           "price": 68.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -205,7 +241,7 @@
           "price": 64.16,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -214,7 +250,7 @@
           "price": 79.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -223,7 +259,7 @@
           "price": 70.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -249,7 +285,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -259,7 +295,7 @@
           "price": 68.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -268,7 +304,7 @@
           "price": 65.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -277,7 +313,7 @@
           "price": 80.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -286,7 +322,7 @@
           "price": 70.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -312,7 +348,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:29",
         "delivery": "no"
       },
       "allFuels": [
@@ -322,7 +358,7 @@
           "price": 68.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:29",
           "delivery": "no"
         },
         {
@@ -331,7 +367,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:29",
           "delivery": "no"
         },
         {
@@ -340,7 +376,7 @@
           "price": 80.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:29",
           "delivery": "no"
         },
         {
@@ -349,7 +385,7 @@
           "price": 70.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:29",
           "delivery": "no"
         }
       ],
@@ -375,7 +411,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:27",
         "delivery": "yes"
       },
       "allFuels": [
@@ -385,7 +421,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "yes"
         },
         {
@@ -394,7 +430,7 @@
           "price": 68.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "yes"
         },
         {
@@ -403,7 +439,7 @@
           "price": 36.79,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -412,7 +448,7 @@
           "price": 80.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "yes"
         },
         {
@@ -421,7 +457,7 @@
           "price": 70.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "yes"
         }
       ],
@@ -447,7 +483,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -457,16 +493,16 @@
           "price": 68.13,
           "priceSince": "2026-09-07T22:06:20.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 64.4,
-          "priceSince": "2026-09-08T04:23:43.000000Z",
+          "priceSince": "2026-09-08T06:12:24.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -475,7 +511,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:00:56.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -484,7 +520,7 @@
           "price": 79.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -493,7 +529,7 @@
           "price": 70.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -519,7 +555,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -529,7 +565,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -538,7 +574,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -547,7 +583,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -556,7 +592,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -606,10 +642,10 @@
         "title": "Бензин АИ-95 брендированный",
         "price": 70.75,
         "priceSince": "2026-09-08T06:00:10.000000Z",
-        "status": "in_transit",
+        "status": "absent",
         "avail": false,
-        "since": "09:02",
-        "delivery": "soon"
+        "since": "09:32",
+        "delivery": "no"
       },
       "allFuels": [
         {
@@ -617,9 +653,9 @@
           "shortTitle": "95",
           "price": 70.75,
           "priceSince": "2026-09-08T05:13:52.000000Z",
-          "status": "in_transit",
-          "since": "09:02",
-          "delivery": "soon"
+          "status": "absent",
+          "since": "09:32",
+          "delivery": "no"
         },
         {
           "id": 62,
@@ -627,8 +663,8 @@
           "price": 64.33,
           "priceSince": "2026-09-08T05:36:02.000000Z",
           "status": "available",
-          "since": "09:02",
-          "delivery": "soon"
+          "since": "09:32",
+          "delivery": "no"
         },
         {
           "id": 372,
@@ -636,7 +672,7 @@
           "price": 79.64,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -644,9 +680,9 @@
           "shortTitle": "G-95",
           "price": 70.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "in_transit",
-          "since": "09:02",
-          "delivery": "soon"
+          "status": "absent",
+          "since": "09:32",
+          "delivery": "no"
         }
       ],
       "error": null
@@ -671,7 +707,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:58",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -681,7 +717,7 @@
           "price": 69.42,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -690,7 +726,7 @@
           "price": 64.7,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -699,7 +735,7 @@
           "price": 39.42,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -708,7 +744,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:10.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -717,7 +753,7 @@
           "price": 80.31,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -726,7 +762,7 @@
           "price": 71.42,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -752,7 +788,7 @@
         "priceSince": "2026-09-08T00:13:02.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:27",
         "delivery": "no"
       },
       "allFuels": [
@@ -760,9 +796,9 @@
           "id": 100032,
           "shortTitle": "G-100",
           "price": 94.8,
-          "priceSince": "2026-09-08T06:01:16.000000Z",
+          "priceSince": "2026-09-08T06:08:30.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -771,7 +807,7 @@
           "price": 64.65,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -780,7 +816,7 @@
           "price": 69.34,
           "priceSince": "2026-09-08T00:13:27.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -789,7 +825,7 @@
           "price": 80.35,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -798,7 +834,7 @@
           "price": 71.34,
           "priceSince": "2026-09-08T00:13:02.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         }
       ],
@@ -824,7 +860,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:27",
         "delivery": "no"
       },
       "allFuels": [
@@ -834,7 +870,7 @@
           "price": 68.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -843,7 +879,7 @@
           "price": 64.1,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -852,7 +888,7 @@
           "price": 79.57,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -861,7 +897,7 @@
           "price": 70.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         }
       ],
@@ -913,7 +949,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:27",
         "delivery": "no"
       },
       "allFuels": [
@@ -923,7 +959,7 @@
           "price": 69.42,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -932,7 +968,7 @@
           "price": 65.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -941,7 +977,7 @@
           "price": 71.42,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         }
       ],
@@ -967,7 +1003,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:54",
+        "since": "09:30",
         "delivery": "no"
       },
       "allFuels": [
@@ -977,7 +1013,7 @@
           "price": 68.63,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:54",
+          "since": "09:30",
           "delivery": "no"
         },
         {
@@ -986,7 +1022,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:54",
+          "since": "09:30",
           "delivery": "no"
         },
         {
@@ -995,7 +1031,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:54",
+          "since": "09:30",
           "delivery": "no"
         },
         {
@@ -1004,7 +1040,7 @@
           "price": 70.63,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:54",
+          "since": "09:30",
           "delivery": "no"
         }
       ],
@@ -1030,7 +1066,7 @@
         "priceSince": "2026-09-07T23:38:41.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -1039,8 +1075,8 @@
           "shortTitle": "95",
           "price": 68.63,
           "priceSince": "2026-09-07T20:43:09.000000Z",
-          "status": "absent",
-          "since": "08:59",
+          "status": "available",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -1049,7 +1085,7 @@
           "price": 65.43,
           "priceSince": "2026-09-08T05:35:52.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -1058,7 +1094,7 @@
           "price": 80.31,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -1067,7 +1103,7 @@
           "price": 70.63,
           "priceSince": "2026-09-07T23:38:41.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -1103,7 +1139,7 @@
           "price": 67.77,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -1112,7 +1148,7 @@
           "price": 63.73,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -1121,7 +1157,7 @@
           "price": 78.66,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -1147,7 +1183,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -1157,7 +1193,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:02:53.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1166,7 +1202,7 @@
           "price": 63.73,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1175,7 +1211,7 @@
           "price": 67.77,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1184,7 +1220,7 @@
           "price": 78.66,
           "priceSince": "2026-09-08T04:53:51.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1193,7 +1229,7 @@
           "price": 69.77,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -1219,7 +1255,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -1227,28 +1263,28 @@
           "id": 12,
           "shortTitle": "95",
           "price": 67.77,
-          "priceSince": "2026-09-08T05:48:28.000000Z",
+          "priceSince": "2026-09-08T06:32:36.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 63.73,
-          "priceSince": "2026-09-08T05:48:59.000000Z",
+          "priceSince": "2026-09-08T06:31:59.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
           "id": 372,
           "shortTitle": "ДТл",
           "price": 78.66,
-          "priceSince": "2026-09-08T06:03:47.000000Z",
+          "priceSince": "2026-09-08T06:10:26.000000Z",
           "status": "available",
-          "since": "08:57",
-          "delivery": "yes"
+          "since": "09:33",
+          "delivery": "soon"
         },
         {
           "id": 421,
@@ -1256,7 +1292,7 @@
           "price": 69.77,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -1282,7 +1318,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "08:57",
+        "since": "09:27",
         "delivery": "yes"
       },
       "allFuels": [
@@ -1292,7 +1328,7 @@
           "price": 68.8,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -1301,7 +1337,7 @@
           "price": 64.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "yes"
         },
         {
@@ -1310,7 +1346,7 @@
           "price": 80.12,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -1319,7 +1355,7 @@
           "price": 70.8,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:27",
           "delivery": "yes"
         }
       ],
@@ -1345,7 +1381,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -1355,7 +1391,7 @@
           "price": 67.52,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1363,8 +1399,8 @@
           "shortTitle": "92",
           "price": 63.3,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "available",
-          "since": "08:57",
+          "status": "absent",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1373,7 +1409,7 @@
           "price": 78.66,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1382,7 +1418,7 @@
           "price": 69.52,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -1472,7 +1508,7 @@
           "price": 66.72,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -1481,7 +1517,7 @@
           "price": 70.34,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -1490,7 +1526,7 @@
           "price": 81.97,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -1514,9 +1550,9 @@
         "title": "Бензин АИ-95 брендированный",
         "price": 72.04,
         "priceSince": "2026-09-08T06:00:10.000000Z",
-        "status": "in_transit",
-        "avail": false,
-        "since": "08:59",
+        "status": "available",
+        "avail": true,
+        "since": "09:32",
         "delivery": "yes"
       },
       "allFuels": [
@@ -1525,8 +1561,8 @@
           "shortTitle": "95",
           "price": 70.04,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "in_transit",
-          "since": "08:59",
+          "status": "available",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -1535,7 +1571,7 @@
           "price": 65.27,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -1544,7 +1580,7 @@
           "price": 81.86,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -1552,8 +1588,8 @@
           "shortTitle": "G-95",
           "price": 72.04,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "in_transit",
-          "since": "08:59",
+          "status": "available",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -1579,7 +1615,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -1589,7 +1625,7 @@
           "price": 68.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1598,7 +1634,7 @@
           "price": 63.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1607,7 +1643,7 @@
           "price": 94.6,
           "priceSince": "2026-09-08T03:01:53.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1616,7 +1652,7 @@
           "price": 79.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1625,7 +1661,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -1649,9 +1685,9 @@
         "title": "Бензин АИ-95 брендированный",
         "price": 70.51,
         "priceSince": "2026-09-08T00:04:42.000000Z",
-        "status": "available",
-        "avail": true,
-        "since": "08:57",
+        "status": "absent",
+        "avail": false,
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -1661,7 +1697,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:01:16.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1669,8 +1705,8 @@
           "shortTitle": "92",
           "price": 64.33,
           "priceSince": "2026-09-08T00:05:00.000000Z",
-          "status": "available",
-          "since": "08:57",
+          "status": "absent",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1679,7 +1715,7 @@
           "price": 68.51,
           "priceSince": "2026-09-08T03:10:16.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1688,7 +1724,7 @@
           "price": 80.49,
           "priceSince": "2026-09-06T22:53:37.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1696,8 +1732,8 @@
           "shortTitle": "G-95",
           "price": 70.51,
           "priceSince": "2026-09-08T00:04:42.000000Z",
-          "status": "available",
-          "since": "08:57",
+          "status": "absent",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -1723,7 +1759,7 @@
         "priceSince": "2026-09-07T20:13:04.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "yes"
       },
       "allFuels": [
@@ -1733,7 +1769,7 @@
           "price": 69.11,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -1742,7 +1778,7 @@
           "price": 65.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -1751,7 +1787,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:01:40.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1760,7 +1796,7 @@
           "price": 80.74,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1769,7 +1805,7 @@
           "price": 71.11,
           "priceSince": "2026-09-07T20:13:04.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         }
       ],
@@ -1795,7 +1831,7 @@
         "priceSince": "2026-09-07T23:50:58.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -1805,7 +1841,7 @@
           "price": 68.92,
           "priceSince": "2026-09-07T23:50:58.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -1814,7 +1850,7 @@
           "price": 64.16,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -1823,7 +1859,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:47.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -1832,7 +1868,7 @@
           "price": 80.12,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1841,7 +1877,7 @@
           "price": 70.92,
           "priceSince": "2026-09-07T23:50:58.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -1919,7 +1955,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -1929,7 +1965,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1938,7 +1974,7 @@
           "price": 82.28,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -1947,7 +1983,7 @@
           "price": 71.03,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -1973,7 +2009,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "yes"
       },
       "allFuels": [
@@ -1983,7 +2019,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -1992,7 +2028,7 @@
           "price": 80.81,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2001,7 +2037,7 @@
           "price": 71.03,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         }
       ],
@@ -2027,7 +2063,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2037,7 +2073,7 @@
           "price": 68.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2046,7 +2082,7 @@
           "price": 63.78,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2055,7 +2091,7 @@
           "price": 70.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2079,9 +2115,9 @@
         "title": "Бензин АИ-95 брендированный",
         "price": 70.92,
         "priceSince": "2026-09-07T20:30:48.000000Z",
-        "status": "available",
-        "avail": true,
-        "since": "08:57",
+        "status": "absent",
+        "avail": false,
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2090,8 +2126,8 @@
           "shortTitle": "92",
           "price": 64.94,
           "priceSince": "2026-09-07T20:30:48.000000Z",
-          "status": "available",
-          "since": "08:57",
+          "status": "absent",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2100,7 +2136,7 @@
           "price": 68.92,
           "priceSince": "2026-09-07T20:30:48.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2109,7 +2145,7 @@
           "price": 83.06,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2117,8 +2153,8 @@
           "shortTitle": "G-95",
           "price": 70.92,
           "priceSince": "2026-09-07T20:30:48.000000Z",
-          "status": "available",
-          "since": "08:57",
+          "status": "absent",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2144,7 +2180,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2154,7 +2190,7 @@
           "price": 68.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2163,7 +2199,7 @@
           "price": 64.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2172,7 +2208,7 @@
           "price": 82.28,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2181,7 +2217,7 @@
           "price": 70.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2207,7 +2243,7 @@
         "priceSince": "2026-09-07T13:20:46.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2217,7 +2253,7 @@
           "price": 68.66,
           "priceSince": "2026-09-08T03:41:53.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2226,7 +2262,7 @@
           "price": 63.81,
           "priceSince": "2026-09-07T13:20:46.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2235,7 +2271,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:38.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -2244,7 +2280,7 @@
           "price": 79.4,
           "priceSince": "2026-09-07T13:20:46.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2253,7 +2289,7 @@
           "price": 70.66,
           "priceSince": "2026-09-07T13:20:46.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2279,7 +2315,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2289,7 +2325,7 @@
           "price": 64.7,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2298,7 +2334,7 @@
           "price": 68.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2307,7 +2343,7 @@
           "price": 70.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2333,7 +2369,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2343,7 +2379,7 @@
           "price": 69.11,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "soon"
         },
         {
@@ -2352,7 +2388,7 @@
           "price": 64.7,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "soon"
         },
         {
@@ -2361,7 +2397,7 @@
           "price": 80.69,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2370,7 +2406,7 @@
           "price": 71.11,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2396,7 +2432,7 @@
         "priceSince": "2026-09-07T00:19:50.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2406,7 +2442,7 @@
           "price": 68.68,
           "priceSince": "2026-09-08T05:51:30.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2415,7 +2451,7 @@
           "price": 64.51,
           "priceSince": "2026-09-07T20:28:18.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2424,7 +2460,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:14.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2433,7 +2469,7 @@
           "price": 79.76,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2442,7 +2478,7 @@
           "price": 70.68,
           "priceSince": "2026-09-07T00:19:50.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2468,7 +2504,7 @@
         "priceSince": "2026-09-07T14:55:20.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2478,16 +2514,16 @@
           "price": 68.44,
           "priceSince": "2026-09-08T04:21:01.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 64.21,
-          "priceSince": "2026-09-08T06:03:06.000000Z",
+          "priceSince": "2026-09-08T06:21:27.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2496,7 +2532,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:01:08.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2505,7 +2541,7 @@
           "price": 80.12,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2514,7 +2550,7 @@
           "price": 70.44,
           "priceSince": "2026-09-07T14:55:20.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2540,7 +2576,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2550,7 +2586,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:01:22.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2559,7 +2595,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2568,7 +2604,7 @@
           "price": 63.84,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2577,7 +2613,7 @@
           "price": 80.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2586,7 +2622,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2610,9 +2646,9 @@
         "title": "Бензин АИ-95 брендированный",
         "price": 70.13,
         "priceSince": "2026-09-07T00:59:50.000000Z",
-        "status": "in_transit",
-        "avail": false,
-        "since": "08:57",
+        "status": "available",
+        "avail": true,
+        "since": "09:34",
         "delivery": "yes"
       },
       "allFuels": [
@@ -2622,7 +2658,7 @@
           "price": 95.2,
           "priceSince": "2026-09-07T00:59:11.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2631,7 +2667,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2640,7 +2676,7 @@
           "price": 68.13,
           "priceSince": "2026-09-07T01:00:36.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2649,7 +2685,7 @@
           "price": 79.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2657,8 +2693,8 @@
           "shortTitle": "G-95",
           "price": 70.13,
           "priceSince": "2026-09-07T00:59:50.000000Z",
-          "status": "in_transit",
-          "since": "08:57",
+          "status": "available",
+          "since": "09:34",
           "delivery": "yes"
         }
       ],
@@ -2694,7 +2730,7 @@
           "price": 68.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2703,7 +2739,7 @@
           "price": 64.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2712,7 +2748,7 @@
           "price": 81.04,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -2738,7 +2774,7 @@
         "priceSince": "2026-09-07T23:35:54.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "yes"
       },
       "allFuels": [
@@ -2746,9 +2782,9 @@
           "id": 12,
           "shortTitle": "95",
           "price": 68.37,
-          "priceSince": "2026-09-07T23:36:23.000000Z",
+          "priceSince": "2026-09-08T06:29:11.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2757,7 +2793,7 @@
           "price": 63.16,
           "priceSince": "2026-09-07T09:50:09.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2766,7 +2802,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:00:32.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2775,7 +2811,7 @@
           "price": 79.64,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2784,7 +2820,7 @@
           "price": 70.37,
           "priceSince": "2026-09-07T23:35:54.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         }
       ],
@@ -2810,7 +2846,7 @@
         "priceSince": "2026-09-07T22:49:14.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "yes"
       },
       "allFuels": [
@@ -2820,7 +2856,7 @@
           "price": 68.68,
           "priceSince": "2026-09-07T22:49:56.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2829,7 +2865,7 @@
           "price": 63.6,
           "priceSince": "2026-09-06T22:48:33.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2838,7 +2874,7 @@
           "price": 80.74,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2847,7 +2883,7 @@
           "price": 70.68,
           "priceSince": "2026-09-07T22:49:14.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         }
       ],
@@ -2873,7 +2909,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "yes"
       },
       "allFuels": [
@@ -2883,7 +2919,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:00:27.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -2892,7 +2928,7 @@
           "price": 69.11,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -2901,7 +2937,7 @@
           "price": 64.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -2910,7 +2946,7 @@
           "price": 81.42,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -2919,7 +2955,7 @@
           "price": 71.11,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -2945,7 +2981,7 @@
         "priceSince": "2026-09-07T19:03:51.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -2955,7 +2991,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:03.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -2964,16 +3000,16 @@
           "price": 63.36,
           "priceSince": "2026-09-08T05:42:49.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
           "id": 12,
           "shortTitle": "95",
           "price": 68.37,
-          "priceSince": "2026-09-08T04:57:38.000000Z",
+          "priceSince": "2026-09-08T06:23:14.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2982,7 +3018,7 @@
           "price": 79.45,
           "priceSince": "2026-09-08T04:49:15.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -2991,7 +3027,7 @@
           "price": 70.37,
           "priceSince": "2026-09-07T19:03:51.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -3017,8 +3053,8 @@
         "priceSince": "2026-09-07T13:38:48.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
-        "delivery": "yes"
+        "since": "09:33",
+        "delivery": "soon"
       },
       "allFuels": [
         {
@@ -3027,8 +3063,8 @@
           "price": 68.51,
           "priceSince": "2026-09-07T13:39:08.000000Z",
           "status": "available",
-          "since": "08:58",
-          "delivery": "yes"
+          "since": "09:33",
+          "delivery": "soon"
         },
         {
           "id": 62,
@@ -3036,7 +3072,7 @@
           "price": 64.33,
           "priceSince": "2026-09-07T13:39:30.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3045,7 +3081,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:35.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3054,7 +3090,7 @@
           "price": 80.49,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3063,8 +3099,8 @@
           "price": 70.51,
           "priceSince": "2026-09-07T13:38:48.000000Z",
           "status": "available",
-          "since": "08:57",
-          "delivery": "yes"
+          "since": "09:33",
+          "delivery": "soon"
         }
       ],
       "error": null
@@ -3099,7 +3135,7 @@
           "price": 69.3,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -3108,7 +3144,7 @@
           "price": 64.4,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -3117,7 +3153,7 @@
           "price": 82.15,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "yes"
         }
       ],
@@ -3143,7 +3179,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -3153,7 +3189,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:01:59.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3162,7 +3198,7 @@
           "price": 68.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3171,7 +3207,7 @@
           "price": 64.16,
           "priceSince": "2026-09-07T16:13:00.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3180,7 +3216,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3189,7 +3225,7 @@
           "price": 70.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -3215,7 +3251,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -3225,7 +3261,7 @@
           "price": 68.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3234,7 +3270,7 @@
           "price": 63.78,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3243,7 +3279,7 @@
           "price": 81.48,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3252,7 +3288,7 @@
           "price": 70.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -3278,7 +3314,7 @@
         "priceSince": "2026-09-07T19:49:23.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -3288,25 +3324,25 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:43.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 64.33,
-          "priceSince": "2026-09-08T05:35:40.000000Z",
+          "priceSince": "2026-09-08T06:33:49.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
           "id": 12,
           "shortTitle": "95",
           "price": 68.13,
-          "priceSince": "2026-09-08T04:14:04.000000Z",
+          "priceSince": "2026-09-08T06:35:26.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -3315,7 +3351,7 @@
           "price": 80.25,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -3324,7 +3360,7 @@
           "price": 70.13,
           "priceSince": "2026-09-07T19:49:23.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -3350,7 +3386,7 @@
         "priceSince": "2026-09-07T13:03:57.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -3359,27 +3395,27 @@
           "shortTitle": "95",
           "price": 68.13,
           "priceSince": "2026-09-08T05:51:02.000000Z",
-          "status": "in_transit",
-          "since": "09:03",
-          "delivery": "yes"
+          "status": "available",
+          "since": "09:33",
+          "delivery": "soon"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 64.33,
           "priceSince": "2026-09-08T05:50:44.000000Z",
-          "status": "in_transit",
-          "since": "09:03",
-          "delivery": "yes"
+          "status": "available",
+          "since": "09:33",
+          "delivery": "soon"
         },
         {
           "id": 100032,
           "shortTitle": "G-100",
           "price": 94.8,
           "priceSince": "2026-09-08T05:51:22.000000Z",
-          "status": "in_transit",
-          "since": "09:03",
-          "delivery": "yes"
+          "status": "available",
+          "since": "09:33",
+          "delivery": "soon"
         },
         {
           "id": 372,
@@ -3387,7 +3423,7 @@
           "price": 80.25,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3396,7 +3432,7 @@
           "price": 70.13,
           "priceSince": "2026-09-07T13:03:57.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -3422,7 +3458,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -3432,7 +3468,7 @@
           "price": 68.99,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3441,7 +3477,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3450,7 +3486,7 @@
           "price": 82.53,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3459,7 +3495,7 @@
           "price": 70.99,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -3485,7 +3521,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:27",
+        "since": "09:27",
         "delivery": "no"
       },
       "allFuels": [
@@ -3495,7 +3531,7 @@
           "price": 68.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:27",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -3504,7 +3540,7 @@
           "price": 64.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:27",
+          "since": "09:27",
           "delivery": "no"
         },
         {
@@ -3513,7 +3549,7 @@
           "price": 70.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:27",
+          "since": "09:27",
           "delivery": "no"
         }
       ],
@@ -3563,10 +3599,10 @@
         "title": "Бензин АИ-95 брендированный",
         "price": 70.68,
         "priceSince": "2026-09-07T21:33:05.000000Z",
-        "status": "available",
-        "avail": true,
-        "since": "08:58",
-        "delivery": "no"
+        "status": "in_transit",
+        "avail": false,
+        "since": "09:33",
+        "delivery": "yes"
       },
       "allFuels": [
         {
@@ -3575,7 +3611,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:03:15.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3584,8 +3620,8 @@
           "price": 68.68,
           "priceSince": "2026-09-07T21:33:33.000000Z",
           "status": "available",
-          "since": "08:57",
-          "delivery": "no"
+          "since": "09:33",
+          "delivery": "yes"
         },
         {
           "id": 62,
@@ -3593,8 +3629,8 @@
           "price": 63.48,
           "priceSince": "2026-09-07T10:49:58.000000Z",
           "status": "available",
-          "since": "08:57",
-          "delivery": "no"
+          "since": "09:33",
+          "delivery": "yes"
         },
         {
           "id": 372,
@@ -3602,7 +3638,7 @@
           "price": 79.82,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3610,9 +3646,9 @@
           "shortTitle": "G-95",
           "price": 70.68,
           "priceSince": "2026-09-07T21:33:05.000000Z",
-          "status": "available",
-          "since": "08:58",
-          "delivery": "no"
+          "status": "in_transit",
+          "since": "09:33",
+          "delivery": "yes"
         }
       ],
       "error": null
@@ -3637,7 +3673,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -3647,7 +3683,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T05:16:01.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3656,7 +3692,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T05:18:06.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3665,7 +3701,7 @@
           "price": 80.43,
           "priceSince": "2026-09-07T15:14:35.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3674,7 +3710,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -3700,7 +3736,7 @@
         "priceSince": "2026-09-08T03:57:36.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -3710,7 +3746,7 @@
           "price": 68.75,
           "priceSince": "2026-09-08T03:57:45.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3719,7 +3755,7 @@
           "price": 64.59,
           "priceSince": "2026-09-08T03:57:57.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3728,7 +3764,7 @@
           "price": 80.31,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3737,7 +3773,7 @@
           "price": 70.75,
           "priceSince": "2026-09-08T03:57:36.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -3763,7 +3799,7 @@
         "priceSince": "2026-09-07T07:43:08.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -3771,9 +3807,9 @@
           "id": 12,
           "shortTitle": "95",
           "price": 68.51,
-          "priceSince": "2026-09-08T05:25:56.000000Z",
+          "priceSince": "2026-09-08T06:32:18.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3782,7 +3818,7 @@
           "price": 64.45,
           "priceSince": "2026-09-07T23:54:26.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3791,7 +3827,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:00:42.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3800,7 +3836,7 @@
           "price": 80.74,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3809,7 +3845,7 @@
           "price": 70.51,
           "priceSince": "2026-09-07T07:43:08.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -3835,7 +3871,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -3845,7 +3881,7 @@
           "price": 64.1,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -3854,7 +3890,7 @@
           "price": 82.53,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -3863,7 +3899,7 @@
           "price": 69.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -3889,7 +3925,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -3899,7 +3935,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:01:09.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3908,7 +3944,7 @@
           "price": 68.99,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3917,7 +3953,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3926,7 +3962,7 @@
           "price": 80.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -3935,7 +3971,7 @@
           "price": 70.99,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -3987,7 +4023,7 @@
         "priceSince": "2026-09-08T03:17:19.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -3997,7 +4033,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:29.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4006,7 +4042,7 @@
           "price": 68.63,
           "priceSince": "2026-09-07T17:43:22.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4015,7 +4051,7 @@
           "price": 64.59,
           "priceSince": "2026-09-07T19:44:51.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4024,7 +4060,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4033,7 +4069,7 @@
           "price": 70.63,
           "priceSince": "2026-09-08T03:17:19.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -4059,7 +4095,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:04",
+        "since": "09:34",
         "delivery": "no"
       },
       "allFuels": [
@@ -4069,7 +4105,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4078,7 +4114,7 @@
           "price": 69.62,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:04",
+          "since": "09:34",
           "delivery": "no"
         }
       ],
@@ -4102,10 +4138,10 @@
         "title": "Бензин АИ-95 брендированный",
         "price": 70.56,
         "priceSince": "2026-09-07T14:17:45.000000Z",
-        "status": "absent",
+        "status": "in_transit",
         "avail": false,
-        "since": "09:03",
-        "delivery": "no"
+        "since": "09:33",
+        "delivery": "yes"
       },
       "allFuels": [
         {
@@ -4113,18 +4149,18 @@
           "shortTitle": "95",
           "price": 68.56,
           "priceSince": "2026-09-07T14:17:45.000000Z",
-          "status": "absent",
-          "since": "09:03",
-          "delivery": "no"
+          "status": "in_transit",
+          "since": "09:33",
+          "delivery": "yes"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 63.73,
           "priceSince": "2026-09-08T01:36:59.000000Z",
-          "status": "absent",
-          "since": "09:03",
-          "delivery": "no"
+          "status": "in_transit",
+          "since": "09:33",
+          "delivery": "yes"
         },
         {
           "id": 100032,
@@ -4132,7 +4168,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:58.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4141,7 +4177,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4149,9 +4185,9 @@
           "shortTitle": "G-95",
           "price": 70.56,
           "priceSince": "2026-09-07T14:17:45.000000Z",
-          "status": "absent",
-          "since": "09:03",
-          "delivery": "no"
+          "status": "in_transit",
+          "since": "09:33",
+          "delivery": "yes"
         }
       ],
       "error": null
@@ -4176,7 +4212,7 @@
         "priceSince": "2026-09-07T19:25:58.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -4184,9 +4220,9 @@
           "id": 12,
           "shortTitle": "95",
           "price": 68.68,
-          "priceSince": "2026-09-07T19:26:41.000000Z",
+          "priceSince": "2026-09-08T06:04:27.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -4195,7 +4231,7 @@
           "price": 64.51,
           "priceSince": "2026-09-08T02:17:49.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -4204,7 +4240,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:52.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4212,8 +4248,8 @@
           "shortTitle": "ДТл",
           "price": 79.33,
           "priceSince": "2026-09-07T19:27:10.000000Z",
-          "status": "available",
-          "since": "08:57",
+          "status": "in_transit",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -4222,7 +4258,7 @@
           "price": 70.68,
           "priceSince": "2026-09-07T19:25:58.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -4248,7 +4284,7 @@
         "priceSince": "2026-09-07T19:29:11.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -4258,7 +4294,7 @@
           "price": 68.87,
           "priceSince": "2026-09-07T19:28:21.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4267,7 +4303,7 @@
           "price": 64.51,
           "priceSince": "2026-09-07T12:41:05.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4276,7 +4312,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:19.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4285,7 +4321,7 @@
           "price": 82.65,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4294,7 +4330,7 @@
           "price": 70.87,
           "priceSince": "2026-09-07T19:29:11.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -4320,7 +4356,7 @@
         "priceSince": "2026-09-07T23:47:40.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -4330,7 +4366,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:01:48.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4339,7 +4375,7 @@
           "price": 68.51,
           "priceSince": "2026-09-07T23:47:11.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4348,7 +4384,7 @@
           "price": 64.45,
           "priceSince": "2026-09-07T23:46:33.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4357,7 +4393,7 @@
           "price": 39.93,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4366,7 +4402,7 @@
           "price": 80.49,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4375,7 +4411,7 @@
           "price": 70.51,
           "priceSince": "2026-09-07T23:47:40.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -4401,7 +4437,7 @@
         "priceSince": "2026-09-08T04:23:42.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -4411,7 +4447,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:32.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4420,7 +4456,7 @@
           "price": 68.37,
           "priceSince": "2026-09-07T18:37:01.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4429,7 +4465,7 @@
           "price": 63.84,
           "priceSince": "2026-09-07T18:37:30.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4438,7 +4474,7 @@
           "price": 80.25,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4447,7 +4483,7 @@
           "price": 70.37,
           "priceSince": "2026-09-08T04:23:42.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -4499,8 +4535,8 @@
         "priceSince": "2026-09-08T04:24:20.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:59",
-        "delivery": "soon"
+        "since": "09:32",
+        "delivery": "no"
       },
       "allFuels": [
         {
@@ -4509,8 +4545,8 @@
           "price": 67.89,
           "priceSince": "2026-09-08T04:23:50.000000Z",
           "status": "available",
-          "since": "08:59",
-          "delivery": "soon"
+          "since": "09:32",
+          "delivery": "no"
         },
         {
           "id": 62,
@@ -4518,7 +4554,7 @@
           "price": 63.41,
           "priceSince": "2026-09-08T04:23:23.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4527,7 +4563,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:01:44.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4536,7 +4572,7 @@
           "price": 78.9,
           "priceSince": "2026-09-07T18:28:50.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4545,8 +4581,8 @@
           "price": 69.89,
           "priceSince": "2026-09-08T04:24:20.000000Z",
           "status": "available",
-          "since": "08:59",
-          "delivery": "soon"
+          "since": "09:32",
+          "delivery": "no"
         }
       ],
       "error": null
@@ -4571,7 +4607,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "soon"
       },
       "allFuels": [
@@ -4581,7 +4617,7 @@
           "price": 68.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "soon"
         },
         {
@@ -4590,7 +4626,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "soon"
         },
         {
@@ -4599,7 +4635,7 @@
           "price": 94.6,
           "priceSince": "2026-09-08T03:01:17.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -4608,7 +4644,7 @@
           "price": 80.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "soon"
         },
         {
@@ -4617,7 +4653,7 @@
           "price": 70.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "soon"
         }
       ],
@@ -4669,7 +4705,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -4679,7 +4715,7 @@
           "price": 68.13,
           "priceSince": "2026-09-08T05:16:59.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -4688,7 +4724,7 @@
           "price": 64.4,
           "priceSince": "2026-09-07T22:14:15.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4697,7 +4733,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:02:57.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4706,7 +4742,7 @@
           "price": 79.87,
           "priceSince": "2026-09-07T17:29:21.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4715,7 +4751,7 @@
           "price": 70.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -4751,7 +4787,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:07",
           "delivery": "no"
         },
         {
@@ -4760,7 +4796,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:05",
           "delivery": "no"
         },
         {
@@ -4769,7 +4805,7 @@
           "price": 79.95,
           "priceSince": "2026-09-07T16:39:20.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:07",
           "delivery": "no"
         },
         {
@@ -4804,7 +4840,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:34",
         "delivery": "no"
       },
       "allFuels": [
@@ -4814,7 +4850,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4823,7 +4859,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -4832,7 +4868,7 @@
           "price": 38.11,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -4841,7 +4877,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:01:15.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -4850,7 +4886,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4859,7 +4895,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         }
       ],
@@ -4885,7 +4921,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -4895,7 +4931,7 @@
           "price": 68.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4904,7 +4940,7 @@
           "price": 63.6,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4913,7 +4949,7 @@
           "price": 70.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -4939,7 +4975,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -4949,7 +4985,7 @@
           "price": 63.41,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -4958,7 +4994,7 @@
           "price": 79.26,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -4967,7 +5003,7 @@
           "price": 68.69,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -4993,7 +5029,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5003,7 +5039,7 @@
           "price": 68.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5012,7 +5048,7 @@
           "price": 64.16,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5021,7 +5057,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:00:55.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5030,7 +5066,7 @@
           "price": 70.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5066,7 +5102,7 @@
           "price": 68.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:04",
+          "since": "09:34",
           "delivery": "yes"
         },
         {
@@ -5075,7 +5111,7 @@
           "price": 64.16,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:04",
+          "since": "09:34",
           "delivery": "yes"
         },
         {
@@ -5084,7 +5120,7 @@
           "price": 38.32,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:04",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -5093,7 +5129,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:04",
+          "since": "09:34",
           "delivery": "no"
         }
       ],
@@ -5119,7 +5155,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5129,7 +5165,7 @@
           "price": 68.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5138,7 +5174,7 @@
           "price": 64.16,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5147,7 +5183,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5156,7 +5192,7 @@
           "price": 70.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5182,7 +5218,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5192,7 +5228,7 @@
           "price": 68.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5201,7 +5237,7 @@
           "price": 64.08,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5210,7 +5246,7 @@
           "price": 70.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5236,7 +5272,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:56",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5245,9 +5281,9 @@
           "shortTitle": "95",
           "price": 68.37,
           "priceSince": "2026-09-07T10:43:29.000000Z",
-          "status": "absent",
-          "since": "08:56",
-          "delivery": "no"
+          "status": "in_transit",
+          "since": "09:32",
+          "delivery": "yes"
         },
         {
           "id": 62,
@@ -5255,7 +5291,7 @@
           "price": 64.08,
           "priceSince": "2026-09-08T04:10:13.000000Z",
           "status": "absent",
-          "since": "08:56",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5264,7 +5300,7 @@
           "price": 79.33,
           "priceSince": "2026-09-07T12:01:16.000000Z",
           "status": "available",
-          "since": "08:56",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5273,7 +5309,7 @@
           "price": 70.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:56",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5299,7 +5335,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5309,7 +5345,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5318,7 +5354,7 @@
           "price": 64.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5327,7 +5363,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:01:33.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5336,7 +5372,7 @@
           "price": 80.49,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5345,7 +5381,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5371,8 +5407,8 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:01",
-        "delivery": "soon"
+        "since": "09:34",
+        "delivery": "no"
       },
       "allFuels": [
         {
@@ -5381,8 +5417,8 @@
           "price": 68.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
-          "delivery": "soon"
+          "since": "09:34",
+          "delivery": "no"
         },
         {
           "id": 62,
@@ -5390,8 +5426,8 @@
           "price": 64.59,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:01",
-          "delivery": "soon"
+          "since": "09:34",
+          "delivery": "no"
         },
         {
           "id": 372,
@@ -5399,8 +5435,8 @@
           "price": 79.76,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:01",
-          "delivery": "soon"
+          "since": "09:34",
+          "delivery": "no"
         },
         {
           "id": 421,
@@ -5408,8 +5444,8 @@
           "price": 70.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:01",
-          "delivery": "soon"
+          "since": "09:34",
+          "delivery": "no"
         }
       ],
       "error": null
@@ -5434,7 +5470,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -5444,8 +5480,8 @@
           "price": 69.66,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
-          "delivery": "yes"
+          "since": "09:33",
+          "delivery": "soon"
         },
         {
           "id": 373,
@@ -5453,7 +5489,7 @@
           "price": 38.2,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -5462,8 +5498,8 @@
           "price": 65.61,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
-          "delivery": "yes"
+          "since": "09:33",
+          "delivery": "soon"
         },
         {
           "id": 372,
@@ -5471,8 +5507,8 @@
           "price": 81.86,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
-          "delivery": "yes"
+          "since": "09:34",
+          "delivery": "soon"
         },
         {
           "id": 421,
@@ -5480,7 +5516,7 @@
           "price": 71.66,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -5506,7 +5542,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5516,8 +5552,8 @@
           "price": 68.44,
           "priceSince": "2026-09-08T05:17:35.000000Z",
           "status": "available",
-          "since": "09:02",
-          "delivery": "soon"
+          "since": "09:32",
+          "delivery": "no"
         },
         {
           "id": 62,
@@ -5525,8 +5561,8 @@
           "price": 63.73,
           "priceSince": "2026-09-08T05:17:26.000000Z",
           "status": "available",
-          "since": "09:02",
-          "delivery": "soon"
+          "since": "09:32",
+          "delivery": "no"
         },
         {
           "id": 372,
@@ -5534,7 +5570,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5543,7 +5579,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5569,7 +5605,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:58",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5579,7 +5615,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5588,7 +5624,7 @@
           "price": 65.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5597,7 +5633,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5623,7 +5659,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5633,7 +5669,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5642,7 +5678,7 @@
           "price": 65.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5651,7 +5687,7 @@
           "price": 80.93,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5660,7 +5696,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5686,7 +5722,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:36",
         "delivery": "no"
       },
       "allFuels": [
@@ -5695,8 +5731,8 @@
           "shortTitle": "95",
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "absent",
-          "since": "08:57",
+          "status": "available",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -5705,7 +5741,7 @@
           "price": 65.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -5714,7 +5750,7 @@
           "price": 80.93,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -5723,7 +5759,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -5749,7 +5785,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "yes"
       },
       "allFuels": [
@@ -5759,7 +5795,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -5768,7 +5804,7 @@
           "price": 64.7,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -5777,7 +5813,7 @@
           "price": 79.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -5786,7 +5822,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -5812,7 +5848,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:34",
         "delivery": "no"
       },
       "allFuels": [
@@ -5822,7 +5858,7 @@
           "price": 68.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -5830,8 +5866,8 @@
           "shortTitle": "92",
           "price": 64.94,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "available",
-          "since": "08:57",
+          "status": "absent",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -5840,7 +5876,7 @@
           "price": 37.5,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -5849,7 +5885,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -5858,7 +5894,7 @@
           "price": 70.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:34",
           "delivery": "no"
         }
       ],
@@ -5884,7 +5920,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5894,7 +5930,7 @@
           "price": 64.94,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5903,7 +5939,7 @@
           "price": 68.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5912,7 +5948,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5921,7 +5957,7 @@
           "price": 70.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -5947,7 +5983,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -5957,7 +5993,7 @@
           "price": 68.98,
           "priceSince": "2026-09-07T13:27:13.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5966,7 +6002,7 @@
           "price": 64.27,
           "priceSince": "2026-09-07T13:27:13.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5975,7 +6011,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -5984,7 +6020,7 @@
           "price": 70.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6010,7 +6046,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6020,7 +6056,7 @@
           "price": 68.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6029,7 +6065,7 @@
           "price": 64.94,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6038,7 +6074,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6047,7 +6083,7 @@
           "price": 70.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6073,7 +6109,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6083,7 +6119,7 @@
           "price": 68.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6092,7 +6128,7 @@
           "price": 64.59,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6101,7 +6137,7 @@
           "price": 79.76,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6110,7 +6146,7 @@
           "price": 70.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6136,7 +6172,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -6146,7 +6182,7 @@
           "price": 68.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -6155,7 +6191,7 @@
           "price": 64.59,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -6164,7 +6200,7 @@
           "price": 79.76,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6173,7 +6209,7 @@
           "price": 70.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -6199,7 +6235,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6209,7 +6245,7 @@
           "price": 67.77,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6218,7 +6254,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6227,7 +6263,7 @@
           "price": 80.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6236,7 +6272,7 @@
           "price": 69.77,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6272,8 +6308,8 @@
           "price": 64.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
-          "delivery": "yes"
+          "since": "09:38",
+          "delivery": "soon"
         },
         {
           "id": 12,
@@ -6281,8 +6317,8 @@
           "price": 69.3,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
-          "delivery": "yes"
+          "since": "09:38",
+          "delivery": "soon"
         },
         {
           "id": 372,
@@ -6290,7 +6326,7 @@
           "price": 80.31,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:38",
           "delivery": "no"
         }
       ],
@@ -6316,7 +6352,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6326,16 +6362,16 @@
           "price": 68.25,
           "priceSince": "2026-09-08T05:14:13.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 63.6,
-          "priceSince": "2026-09-08T06:07:20.000000Z",
+          "priceSince": "2026-09-08T06:26:19.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6344,7 +6380,7 @@
           "price": 79.82,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6353,7 +6389,7 @@
           "price": 70.25,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6379,7 +6415,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -6389,7 +6425,7 @@
           "price": 67.58,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6398,7 +6434,7 @@
           "price": 62.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6407,7 +6443,7 @@
           "price": 79.26,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6416,7 +6452,7 @@
           "price": 69.58,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -6452,7 +6488,7 @@
           "price": 65.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6461,7 +6497,7 @@
           "price": 68.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6470,7 +6506,7 @@
           "price": 80.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6496,7 +6532,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6506,7 +6542,7 @@
           "price": 68.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6515,7 +6551,7 @@
           "price": 63.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6524,7 +6560,7 @@
           "price": 79.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6533,7 +6569,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6585,7 +6621,7 @@
         "priceSince": "2026-09-06T23:15:13.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6595,7 +6631,7 @@
           "price": 68.25,
           "priceSince": "2026-09-07T23:26:11.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6604,7 +6640,7 @@
           "price": 64.1,
           "priceSince": "2026-09-07T14:09:37.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6613,7 +6649,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:00:28.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6622,7 +6658,7 @@
           "price": 79.08,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6631,7 +6667,7 @@
           "price": 70.25,
           "priceSince": "2026-09-06T23:15:13.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6657,7 +6693,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6667,7 +6703,7 @@
           "price": 68.44,
           "priceSince": "2026-09-07T11:01:04.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6676,7 +6712,7 @@
           "price": 63.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6685,7 +6721,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:02:23.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6694,7 +6730,7 @@
           "price": 79.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6703,7 +6739,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -6729,7 +6765,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:38",
         "delivery": "no"
       },
       "allFuels": [
@@ -6739,16 +6775,16 @@
           "price": 68.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 64.1,
-          "priceSince": "2026-09-08T06:00:10.000000Z",
+          "priceSince": "2026-09-08T06:38:52.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -6757,7 +6793,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         }
       ],
@@ -6783,7 +6819,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -6793,7 +6829,7 @@
           "price": 63.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6802,7 +6838,7 @@
           "price": 38.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6811,7 +6847,7 @@
           "price": 68.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6820,7 +6856,7 @@
           "price": 79.57,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6829,7 +6865,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -6855,7 +6891,7 @@
         "priceSince": "2026-09-07T15:49:43.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -6865,7 +6901,7 @@
           "price": 68.44,
           "priceSince": "2026-09-07T22:35:01.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6874,7 +6910,7 @@
           "price": 64.1,
           "priceSince": "2026-09-08T04:04:48.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6883,7 +6919,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:01:16.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6892,7 +6928,7 @@
           "price": 79.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -6901,7 +6937,7 @@
           "price": 70.44,
           "priceSince": "2026-09-07T15:49:43.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -6927,7 +6963,7 @@
         "priceSince": "2026-09-07T10:14:46.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:58",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -6937,7 +6973,7 @@
           "price": 68.44,
           "priceSince": "2026-09-07T10:14:46.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6946,7 +6982,7 @@
           "price": 63.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6955,7 +6991,7 @@
           "price": 79.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:58",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -6964,7 +7000,7 @@
           "price": 70.44,
           "priceSince": "2026-09-07T10:14:46.000000Z",
           "status": "absent",
-          "since": "08:58",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -7016,7 +7052,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -7026,7 +7062,7 @@
           "price": 68.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7035,7 +7071,7 @@
           "price": 64.59,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7044,7 +7080,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:02:00.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7053,7 +7089,7 @@
           "price": 79.76,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7062,7 +7098,7 @@
           "price": 70.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -7098,7 +7134,7 @@
           "price": 68.25,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7107,7 +7143,7 @@
           "price": 63.78,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -7116,7 +7152,7 @@
           "price": 79.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -7142,7 +7178,7 @@
         "priceSince": "2026-09-07T01:49:55.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -7152,7 +7188,7 @@
           "price": 68.44,
           "priceSince": "2026-09-08T02:11:10.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -7161,7 +7197,7 @@
           "price": 63.73,
           "priceSince": "2026-09-08T02:15:23.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -7170,7 +7206,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:01:34.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7179,7 +7215,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7188,7 +7224,7 @@
           "price": 70.44,
           "priceSince": "2026-09-07T01:49:55.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -7214,7 +7250,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:57",
+        "since": "09:36",
         "delivery": "no"
       },
       "allFuels": [
@@ -7224,7 +7260,7 @@
           "price": 68.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:37",
           "delivery": "no"
         },
         {
@@ -7233,7 +7269,7 @@
           "price": 63.73,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -7242,7 +7278,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -7251,7 +7287,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -7287,7 +7323,7 @@
           "price": 68.44,
           "priceSince": "2026-09-07T18:27:01.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7296,7 +7332,7 @@
           "price": 63.73,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7305,7 +7341,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         }
       ],
@@ -7331,7 +7367,7 @@
         "priceSince": "2026-09-07T03:28:39.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -7341,7 +7377,7 @@
           "price": 94.8,
           "priceSince": "2026-09-07T19:02:58.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7350,7 +7386,7 @@
           "price": 68.8,
           "priceSince": "2026-09-08T03:03:07.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7359,7 +7395,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T02:06:25.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7368,7 +7404,7 @@
           "price": 79.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7377,7 +7413,7 @@
           "price": 70.8,
           "priceSince": "2026-09-07T03:28:39.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -7403,7 +7439,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:34",
         "delivery": "no"
       },
       "allFuels": [
@@ -7413,7 +7449,7 @@
           "price": 69.11,
           "priceSince": "2026-09-07T20:49:12.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7422,7 +7458,7 @@
           "price": 64.59,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7431,7 +7467,7 @@
           "price": 39.93,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -7440,7 +7476,7 @@
           "price": 80.07,
           "priceSince": "2026-09-07T17:33:42.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7449,7 +7485,7 @@
           "price": 71.11,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         }
       ],
@@ -7475,7 +7511,7 @@
         "priceSince": "2026-09-07T08:46:53.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "yes"
       },
       "allFuels": [
@@ -7485,7 +7521,7 @@
           "price": 67.71,
           "priceSince": "2026-09-07T08:45:01.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -7494,7 +7530,7 @@
           "price": 64.16,
           "priceSince": "2026-09-08T01:43:02.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -7503,7 +7539,7 @@
           "price": 79.76,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7512,7 +7548,7 @@
           "price": 69.71,
           "priceSince": "2026-09-07T08:46:53.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         }
       ],
@@ -7538,7 +7574,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -7548,7 +7584,7 @@
           "price": 68.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7557,7 +7593,7 @@
           "price": 62.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7566,7 +7602,7 @@
           "price": 80.19,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7575,7 +7611,7 @@
           "price": 70.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -7611,7 +7647,7 @@
           "price": 68.37,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -7620,7 +7656,7 @@
           "price": 62.75,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -7629,7 +7665,7 @@
           "price": 80.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:34",
           "delivery": "no"
         }
       ],
@@ -7655,7 +7691,7 @@
         "priceSince": "2026-09-07T05:15:50.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "09:02",
+        "since": "09:32",
         "delivery": "yes"
       },
       "allFuels": [
@@ -7665,7 +7701,7 @@
           "price": 68.37,
           "priceSince": "2026-09-07T05:15:25.000000Z",
           "status": "in_transit",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -7674,7 +7710,7 @@
           "price": 63.98,
           "priceSince": "2026-09-07T15:20:57.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7683,7 +7719,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:00:36.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7692,7 +7728,7 @@
           "price": 79.33,
           "priceSince": "2026-09-07T15:21:37.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7701,7 +7737,7 @@
           "price": 70.37,
           "priceSince": "2026-09-07T05:15:50.000000Z",
           "status": "in_transit",
-          "since": "09:02",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -7727,7 +7763,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:36",
         "delivery": "no"
       },
       "allFuels": [
@@ -7737,7 +7773,7 @@
           "price": 68.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -7746,7 +7782,7 @@
           "price": 64.33,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -7755,8 +7791,8 @@
           "price": 80.69,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
-          "delivery": "soon"
+          "since": "09:37",
+          "delivery": "no"
         },
         {
           "id": 421,
@@ -7764,7 +7800,7 @@
           "price": 70.98,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -7790,7 +7826,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:38",
         "delivery": "no"
       },
       "allFuels": [
@@ -7799,8 +7835,8 @@
           "shortTitle": "95",
           "price": 69.66,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "in_transit",
-          "since": "08:59",
+          "status": "available",
+          "since": "09:39",
           "delivery": "yes"
         },
         {
@@ -7808,8 +7844,8 @@
           "shortTitle": "92",
           "price": 64.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "in_transit",
-          "since": "08:59",
+          "status": "available",
+          "since": "09:39",
           "delivery": "yes"
         },
         {
@@ -7818,7 +7854,7 @@
           "price": 81.29,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:38",
           "delivery": "yes"
         },
         {
@@ -7827,7 +7863,7 @@
           "price": 71.66,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:38",
           "delivery": "no"
         }
       ],
@@ -7853,7 +7889,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "yes"
       },
       "allFuels": [
@@ -7862,8 +7898,8 @@
           "shortTitle": "95",
           "price": 68.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "available",
-          "since": "08:59",
+          "status": "in_transit",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -7871,8 +7907,8 @@
           "shortTitle": "92",
           "price": 64.16,
           "priceSince": "2026-09-08T06:00:10.000000Z",
-          "status": "available",
-          "since": "08:59",
+          "status": "in_transit",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -7881,7 +7917,7 @@
           "price": 79.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -7890,7 +7926,7 @@
           "price": 70.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -7926,7 +7962,7 @@
           "price": 67.28,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -7935,7 +7971,7 @@
           "price": 63.48,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -7944,7 +7980,7 @@
           "price": 78.96,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:57",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -7970,7 +8006,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:02",
+        "since": "09:38",
         "delivery": "no"
       },
       "allFuels": [
@@ -7980,7 +8016,7 @@
           "price": 68.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -7989,7 +8025,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -7998,7 +8034,7 @@
           "price": 80.07,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8007,7 +8043,7 @@
           "price": 70.92,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         }
       ],
@@ -8033,7 +8069,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:38",
         "delivery": "no"
       },
       "allFuels": [
@@ -8043,7 +8079,7 @@
           "price": 69.72,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8052,7 +8088,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8061,7 +8097,7 @@
           "price": 80.49,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8070,7 +8106,7 @@
           "price": 71.72,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         }
       ],
@@ -8096,7 +8132,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:02",
+        "since": "09:38",
         "delivery": "no"
       },
       "allFuels": [
@@ -8106,7 +8142,7 @@
           "price": 68.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8115,7 +8151,7 @@
           "price": 65.13,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8124,7 +8160,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:02",
+          "since": "09:38",
           "delivery": "no"
         }
       ],
@@ -8150,7 +8186,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:36",
         "delivery": "no"
       },
       "allFuels": [
@@ -8160,7 +8196,7 @@
           "price": 67.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8169,7 +8205,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8178,7 +8214,7 @@
           "price": 80.31,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8187,7 +8223,7 @@
           "price": 69.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -8213,7 +8249,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -8223,7 +8259,7 @@
           "price": 68.87,
           "priceSince": "2026-09-07T10:52:12.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8232,7 +8268,7 @@
           "price": 65.13,
           "priceSince": "2026-09-08T05:45:00.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8241,7 +8277,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:03:07.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8250,7 +8286,7 @@
           "price": 80.93,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:04",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8259,7 +8295,7 @@
           "price": 70.87,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -8285,7 +8321,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:36",
         "delivery": "no"
       },
       "allFuels": [
@@ -8295,7 +8331,7 @@
           "price": 67.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8304,7 +8340,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8313,7 +8349,7 @@
           "price": 69.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -8339,7 +8375,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -8349,7 +8385,7 @@
           "price": 67.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8358,7 +8394,7 @@
           "price": 64.21,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8367,7 +8403,7 @@
           "price": 69.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -8393,7 +8429,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "09:03",
+        "since": "09:36",
         "delivery": "yes"
       },
       "allFuels": [
@@ -8403,16 +8439,16 @@
           "price": 69.54,
           "priceSince": "2026-09-08T06:01:59.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 64.89,
-          "priceSince": "2026-09-08T06:02:19.000000Z",
+          "priceSince": "2026-09-08T06:12:46.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         },
         {
@@ -8421,7 +8457,7 @@
           "price": 39.93,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8430,7 +8466,7 @@
           "price": 80.43,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8439,7 +8475,7 @@
           "price": 71.54,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         }
       ],
@@ -8465,7 +8501,7 @@
         "priceSince": "2026-09-07T14:41:24.000000Z",
         "status": "available",
         "avail": true,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "yes"
       },
       "allFuels": [
@@ -8475,7 +8511,7 @@
           "price": 68.07,
           "priceSince": "2026-09-07T14:41:01.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -8484,7 +8520,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T04:28:36.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -8493,7 +8529,7 @@
           "price": 94.6,
           "priceSince": "2026-09-07T19:01:25.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -8502,7 +8538,7 @@
           "price": 79.02,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         },
         {
@@ -8511,7 +8547,7 @@
           "price": 70.07,
           "priceSince": "2026-09-07T14:41:24.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "yes"
         }
       ],
@@ -8537,7 +8573,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:32",
         "delivery": "no"
       },
       "allFuels": [
@@ -8547,7 +8583,7 @@
           "price": 68.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -8556,7 +8592,7 @@
           "price": 63.78,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -8565,7 +8601,7 @@
           "price": 80.12,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         },
         {
@@ -8574,7 +8610,7 @@
           "price": 70.44,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:32",
           "delivery": "no"
         }
       ],
@@ -8600,7 +8636,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:04",
+        "since": "09:36",
         "delivery": "no"
       },
       "allFuels": [
@@ -8610,7 +8646,7 @@
           "price": 67.58,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:04",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8619,7 +8655,7 @@
           "price": 63.48,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8628,7 +8664,7 @@
           "price": 69.58,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "absent",
-          "since": "09:04",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -8654,7 +8690,7 @@
         "priceSince": "2026-09-07T23:12:12.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:03",
+        "since": "09:36",
         "delivery": "no"
       },
       "allFuels": [
@@ -8664,16 +8700,16 @@
           "price": 68.51,
           "priceSince": "2026-09-07T23:11:32.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         },
         {
           "id": 62,
           "shortTitle": "92",
           "price": 64.4,
-          "priceSince": "2026-09-08T06:01:53.000000Z",
+          "priceSince": "2026-09-08T06:41:04.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:37",
           "delivery": "yes"
         },
         {
@@ -8682,7 +8718,7 @@
           "price": 95.1,
           "priceSince": "2026-09-07T19:01:13.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         },
         {
@@ -8691,7 +8727,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         },
         {
@@ -8700,7 +8736,7 @@
           "price": 70.51,
           "priceSince": "2026-09-07T23:12:12.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "no"
         }
       ],
@@ -8726,7 +8762,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "in_transit",
         "avail": false,
-        "since": "09:03",
+        "since": "09:36",
         "delivery": "yes"
       },
       "allFuels": [
@@ -8736,7 +8772,7 @@
           "price": 68.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         },
         {
@@ -8745,7 +8781,7 @@
           "price": 64.4,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         },
         {
@@ -8754,7 +8790,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         },
         {
@@ -8763,7 +8799,7 @@
           "price": 70.51,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:36",
           "delivery": "yes"
         }
       ],
@@ -8789,7 +8825,7 @@
         "priceSince": "2026-09-08T02:43:28.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -8799,7 +8835,7 @@
           "price": 68.51,
           "priceSince": "2026-09-08T02:43:52.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -8808,7 +8844,7 @@
           "price": 64.4,
           "priceSince": "2026-09-08T02:44:18.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8817,7 +8853,7 @@
           "price": 95.1,
           "priceSince": "2026-09-08T02:43:09.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -8826,7 +8862,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T02:44:59.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -8835,7 +8871,7 @@
           "price": 70.51,
           "priceSince": "2026-09-08T02:43:28.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -8861,7 +8897,7 @@
         "priceSince": "2026-09-07T11:06:58.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "08:59",
+        "since": "09:38",
         "delivery": "no"
       },
       "allFuels": [
@@ -8869,9 +8905,9 @@
           "id": 12,
           "shortTitle": "95",
           "price": 68.87,
-          "priceSince": "2026-09-08T04:33:42.000000Z",
+          "priceSince": "2026-09-08T06:06:56.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8880,7 +8916,7 @@
           "price": 64.45,
           "priceSince": "2026-09-08T05:46:54.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8889,7 +8925,7 @@
           "price": 79.95,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "08:59",
+          "since": "09:38",
           "delivery": "no"
         },
         {
@@ -8898,7 +8934,7 @@
           "price": 70.87,
           "priceSince": "2026-09-07T11:06:58.000000Z",
           "status": "absent",
-          "since": "08:59",
+          "since": "09:38",
           "delivery": "no"
         }
       ],
@@ -8924,7 +8960,7 @@
         "priceSince": "2026-09-08T06:00:10.000000Z",
         "status": "available",
         "avail": true,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -8934,7 +8970,7 @@
           "price": 68.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "in_transit",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -8943,7 +8979,7 @@
           "price": 63.6,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -8952,7 +8988,7 @@
           "price": 79.26,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "yes"
         },
         {
@@ -8961,7 +8997,7 @@
           "price": 70.01,
           "priceSince": "2026-09-08T06:00:10.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
@@ -8987,7 +9023,7 @@
         "priceSince": "2026-09-07T09:15:28.000000Z",
         "status": "absent",
         "avail": false,
-        "since": "09:03",
+        "since": "09:33",
         "delivery": "no"
       },
       "allFuels": [
@@ -8997,7 +9033,7 @@
           "price": 67.95,
           "priceSince": "2026-09-08T03:11:41.000000Z",
           "status": "available",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -9005,8 +9041,8 @@
           "shortTitle": "92",
           "price": 63.23,
           "priceSince": "2026-09-08T03:11:20.000000Z",
-          "status": "available",
-          "since": "09:03",
+          "status": "absent",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -9015,7 +9051,7 @@
           "price": 2,
           "priceSince": "2026-09-07T19:05:49.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         },
         {
@@ -9024,7 +9060,7 @@
           "price": 78.96,
           "priceSince": "2026-09-08T03:12:07.000000Z",
           "status": "available",
-          "since": "09:04",
+          "since": "09:34",
           "delivery": "no"
         },
         {
@@ -9033,7 +9069,7 @@
           "price": 69.95,
           "priceSince": "2026-09-07T09:15:28.000000Z",
           "status": "absent",
-          "since": "09:03",
+          "since": "09:33",
           "delivery": "no"
         }
       ],
